@@ -24,7 +24,7 @@ TowerPro MG92B can be found on Ebay seller [servohorns959](https://www.ebay.com/
 Filename | Thumbnail | Required |
 -------- | --------- | -------- |
 body_top | ![body_top](files/body_top.png) | 1 |
-body_bottom | | 1 |
+body_bottom | ![body_bottom](files/body_bottom.png) | 1 |
 body_center | | 1 |
 body_side_wall | | 4 |
 body_back_wall | | 1 |
@@ -53,9 +53,9 @@ tools_mount | | 1
 
 Name | Spec | Thumbnail | Required | Note
 ---- | ---- | --------- | -------- | ----
-Screw | M2 6mm | ![6mm](files/M2_6mm.jpg) | 54 | Servo Arm: 1 x 18<br>Joint: 4 x 6<br>Thigh: 2 x 6
-Screw | M2 12 or 10mm | ![10mm](files/M2_10mm.jpg) | 6 | Thigh: 1 x 6
-Screw | M2 30mm | ![30mm](files/M2_30mm.jpg) | 36 | Servo: 2 x 18
-Nuts | M2 | ![6mm](files/M2_nut.jpg) | 36 | Servo: 2 x 18
-Bearing | 8x4x3 mm | ![bearing](files/bearing.jpg) | 18 | Servo: 1 x 18
-Cooper/Aluminum Tube | 6 (height) x 4 (dia.) | ![tube](files/tube_6x4mm.jpg) | 18 | Servo: 1 x 18
+Screw | M2 6mm | ![6mm](files/M2_6mm.JPG) | 54 | Servo Arm: 1 x 18<br>Joint: 4 x 6<br>Thigh: 2 x 6
+Screw | M2 12 or 10mm | ![10mm](files/M2_10mm.JPG) | 6 | Thigh: 1 x 6
+Screw | M2 30mm | ![30mm](files/M2_30mm.JPG) | 36 | Servo: 2 x 18
+Nuts | M2 | ![6mm](files/M2_nut.JPG) | 36 | Servo: 2 x 18
+Bearing | 8x4x3 mm | ![bearing](files/bearing.JPG) | 18 | Servo: 1 x 18
+Cooper/Aluminum Tube | 6 (height) x 4 (dia.) | ![tube](files/tube_6x4mm.JPG) | 18 | Servo: 1 x 18
