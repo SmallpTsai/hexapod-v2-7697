@@ -23,11 +23,11 @@ TowerPro MG92B can be found on Ebay seller [servohorns959](https://www.ebay.com/
 
 Filename | Thumbnail | Required |
 -------- | --------- | -------- |
-body_top | ![body_top](files/body_top.png) | 1 |
-body_bottom | ![body_bottom](files/body_bottom.png) | 1 |
-body_center | | 1 |
+body_top | ![body_top](files/body_top.jpg) | 1 |
+body_bottom | ![body_bottom](files/body_bottom.jpg) | 1 |
+body_center | ![body_center](files/body_center.jpg) | 1 |
 body_side_wall | | 4 |
-body_back_wall | | 1 |
+body_back_wall | ![body_back_wall](files/body_back_wall.jpg) | 1 |
 
 #### Leg x 6
 
