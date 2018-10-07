@@ -1,6 +1,6 @@
 # Bill of Materials
 
-## Servo
+## Servo - MG92B
 
 Servo is the key component. I use TowerPro [MG92B](http://www.towerpro.com.tw/product/mg92b/). It has metal gear (important!).
 An hexapod requires 18 of them.
@@ -11,7 +11,7 @@ An hexapod requires 18 of them.
 >    TowerPro MG92B can be found on Ebay seller [servohorns959](https://www.ebay.com/usr/servohorns959), which is listed on TowerPro official website ([Link] (http://www.towerpro.com.tw/about-us-2/)). <br>I also got mime servo from him.
 
 
-## 3D-Printed
+## 3D-Printed Parts
 
 ### Body x 1
 
@@ -19,24 +19,25 @@ Filename | Thumbnail | Required |
 -------- | --------- | -------- |
 body_top | ![body_top](files/body_top.jpg) | 1 |
 body_bottom | ![body_bottom](files/body_bottom.jpg) | 1 |
-body_center | Under construction | 1 |
-body_side_wall | Under construction | 4? |
+body_center | ![body_center](files/body_center.jpg) | 1 |
+body_side_wall | ![body_side_wall](files/body_side_wall.jpg) | 2 |
 body_back_wall | ![body_back_wall](files/body_back_wall.jpg) | 1 |
 
 ### Leg x 6
 
 Filename | Thumbnail | Required |
 -------- | --------- | -------- |
-thigh_top | ![thigh_top](files/thigh_top.jpg) | 1 x 6 |
-thigh_bottom | ![thigh_bottom](files/thigh_bottom.jpg) | 1 x 6 |
-joint_cross | ![joint_cross](files/joint_cross.jpg) | 1 x 6 |
-joint_top | ![joint_top](files/joint_top.jpg) | 2 x 6 |
-joint_bottom | ![joint_bottom](files/joint_bottom.jpg) | 2 x 6 |
-leg_top | ![leg_top](files/leg_top.jpg) | 1 x 6 |
-let_bottom | ![leg_bottom](files/leg_bottom.jpg) | 1 x 6 |
-foot_top | ![foot_top](files/foot_top.jpg) | 1 x 6 |
-foot_bottom | ![foot_bottom](files/foot_bottom.jpg) | 1 x 6 |
-foot_ground | ![foot_ground](files/foot_ground.jpg) | 1 x 6 |
+thigh_top | ![thigh_top](files/thigh_top.jpg) | 1 (x6) |
+thigh_bottom | ![thigh_bottom](files/thigh_bottom.jpg) | 1 (x6) |
+joint_cross | ![joint_cross](files/joint_cross.jpg) | 1 (x6) |
+joint_top | ![joint_top](files/joint_top.jpg) | 2 (x6) |
+joint_bottom | ![joint_bottom](files/joint_bottom.jpg) | 2 (x6) |
+leg_top | ![leg_top](files/leg_top.jpg) | 1 (x6) |
+let_bottom | ![leg_bottom](files/leg_bottom.jpg) | 1 (x6) |
+foot_top | ![foot_top](files/foot_top.jpg) | 1 (x6) |
+foot_bottom | ![foot_bottom](files/foot_bottom.jpg) | 1 (x6) |
+foot_ground | ![foot_ground](files/foot_ground.jpg) | 1 (x6) |
+foot_tip | ![foot_tip](files/foot_tip.jpg) | 1 (x6) |
 
 ### Tools
 
