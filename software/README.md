@@ -15,7 +15,24 @@ src/linkit_control/ | UI control helper |
 src/hexapod | hexapod class |
 src/hexapod/hal | Hardware Abatraction Layer to running on Linkit 7697 |
 
-> hexapod7697 use c++11 and STL, you may encounter problem if want to port it on pure Arduino platform.
+> Note hexapod7697 use c++11 and STL, you may encounter problem if want to port it on pure Arduino platform.
+
+#### Normal Mode UI
+
+![normal](files/normal_mode.png)
+
+
+#### Setting (Calibration) Mode UI
+
+![setting](files/setting_mode.png)
+
+During Linkit 7697 boot up, quick press the user button. 
+
+LRemote App will display above UI.
+
+It is used to adjust the settings of each servo, make sure they align to center.
+
+> Note. Dont press user button when power on, but just after power on.
 
 ## pathTool
 
