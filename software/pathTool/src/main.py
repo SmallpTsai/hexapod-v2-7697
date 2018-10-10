@@ -3,6 +3,10 @@ import logging
 import os
 import sys
 
+import config
+import kinematics
+from path.lib import point_rotate_z, matrix_mul
+
 def collectPath(sub_folder):
     scripts = {}
     for script_name in [f[:-3] for f in sorted(os.listdir(sub_folder)) if f.endswith('.py') and os.path.isfile(os.path.join(sub_folder, f))]:
@@ -17,6 +21,55 @@ def show_detail(path, result):
     print("path:{}:".format(path))
     for i, p in enumerate(result):
         print("{:2d}  {:5.2f}, {:5.2f}, {:5.2f}".format(i, p[0], p[1], p[2]))
+
+def verify_points(pt):
+    angles = kinematics.ik(pt)
+
+    ok = True
+    failed = []
+    for i, angle in enumerate(angles):
+        if angle < config.angleLimitation[i][0] or angle > config.angleLimitation[i][1]:
+            ok = False
+            failed.append((i, angle))
+
+    return ok, failed
+
+def verify_path(path, params):
+    data, mode, _, _ = params
+    print("Verifying {}...".format(path))
+
+    all_ok = True
+    if mode == "shift":
+        # data: float[6][N][3]
+        assert(len(data) == 6)
+
+        for i in range(len(data[0])):
+            for j in range(6):
+                pt = [config.defaultPosition[j][k] - config.mountPosition[j][k] + data[j][i][k] for k in range(3)]
+                pt = point_rotate_z(pt, config.defaultAngle[j])
+                ok, failed = verify_points(pt)
+
+                if not ok:
+                    print("{}, {} failed: {}".format(i, j, failed))
+                    all_ok = False
+
+    elif mode == "matrix":
+        # data: np.matrix[N]
+        for i in range(len(data)):
+            for j in range(6):
+                pt = matrix_mul(data[i], config.defaultPosition[j])
+                for k in range(3):
+                    pt[k] -= config.mountPosition[j][k]
+                pt = point_rotate_z(pt, config.defaultAngle[j])
+
+                ok, failed = verify_points(pt)
+
+                if not ok:
+                    print("{}, {} failed: {}".format(i, j, failed))
+                    all_ok = False
+    
+    return all_ok
+
 
 def generate_c_body(path, params):
     data, mode, dur, entries = params
@@ -77,19 +130,24 @@ if __name__ == '__main__':
     # generate all paths
     results = {path: generator() for path, generator in paths.items()}
 
-    # output results
-    with open(args.out_path, "w") as f:
-        print("//", file=f)
-        print("// This file is generated, dont directly modify content...", file=f)
-        print("//", file=f)
-        print("namespace {", file=f)
-        for path, data in results.items():
-            print(generate_c_body(path, data), file=f)
-        print("}\n", file=f)
-        for path in results:
-            print(generate_c_def(path), file=f)
+    # verify all path is within safe angles
+    
+    verified = [1 for path, data in results.items() if not verify_path(path, data)]
+    if len(verified) > 0:
+        print("There were errors, exit...")
+    else:
+        # output results
+        with open(args.out_path, "w") as f:
+            print("//", file=f)
+            print("// This file is generated, dont directly modify content...", file=f)
+            print("//", file=f)
+            print("namespace {", file=f)
+            for path, data in results.items():
+                print(generate_c_body(path, data), file=f)
+            print("}\n", file=f)
+            for path in results:
+                print(generate_c_def(path), file=f)
 
-    print("Result written to {}".format(args.out_path))
-
+        print("Result written to {}".format(args.out_path))
 
 

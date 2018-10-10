@@ -8,26 +8,32 @@ namespace hexapod {
 
     extern const MovementTable& standbyTable();
     extern const MovementTable& forwardTable();
+    extern const MovementTable& forwardfastTable();
     extern const MovementTable& backwardTable();
     extern const MovementTable& turnleftTable();
     extern const MovementTable& turnrightTable();
     extern const MovementTable& shiftleftTable();
     extern const MovementTable& shiftrightTable();
+    extern const MovementTable& climbTable();
     extern const MovementTable& rotatexTable();
     extern const MovementTable& rotateyTable();
     extern const MovementTable& rotatezTable();
+    extern const MovementTable& twistTable();
 
     const MovementTable kTable[MOVEMENT_TOTAL] {
         standbyTable(),
         forwardTable(),
+        forwardfastTable(),
         backwardTable(),
         turnleftTable(),
         turnrightTable(),
         shiftleftTable(),
         shiftrightTable(),
+        climbTable(),
         rotatexTable(),
         rotateyTable(),
         rotatezTable(),
+        twistTable(),
     };
 
     Movement::Movement(MovementMode mode):
@@ -36,6 +42,12 @@ namespace hexapod {
     }
 
     void Movement::setMode(MovementMode newMode) {
+
+        if (!kTable[newMode].entries) {
+            LOG_INFO("Error: null movement of mode(%d)!", newMode);
+            return;
+        }
+
         mode_ = newMode;
 
         const MovementTable& table = kTable[mode_];
@@ -48,7 +60,7 @@ namespace hexapod {
 
         const MovementTable& table = kTable[mode_];
 
-         if (elapsed <= 0)
+        if (elapsed <= 0)
             elapsed = table.stepDuration;
 
         if (remainTime_ <= 0) {
