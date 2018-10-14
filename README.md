@@ -10,6 +10,8 @@ You can use any mobile phone (iOS or Android) to control the movement of hexapod
 See demo video - https://youtu.be/NJ7DdDEcq3U to get the idea.
 <a href='https://youtu.be/NJ7DdDEcq3U'><img width=480 src='http://img.youtube.com/vi/NJ7DdDEcq3U/0.jpg'/></a>
 
+> More videos can be found at https://smallptsai.github.io/hexapod-v2-7697/
+
 ## Brief introduction
 
 * **Remote control** is done via `BLE` of `Linkit 7697`
