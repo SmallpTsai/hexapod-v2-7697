@@ -48,5 +48,12 @@ Jumper 2.54mm | | 1 |
 
 ### Sub (x2)
 
+> There is 1 difference between left and right PCB. The SJ1 of right PCB is left open, but `SJ1` of left PCB should be **closed**. (This is i2c address setting of PCB9865)
+
 ![sub_sch](files/sub_sch.png)
 ![sub_brd](files/sub_brd.png)
+
+
+## Servo Connection
+
+![servo_conn](files/servo_conn.jpg)

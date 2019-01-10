@@ -44,7 +44,7 @@ foot_tip | ![foot_tip](files/foot_tip.jpg) | 1 (x6) |
 Name | Spec | Thumbnail | Required | Note
 ---- | ---- | --------- | -------- | ----
 Screw | M2 6mm | ![6mm](files/M2_6mm.JPG) | 54 | Servo Arm: 1 x 18<br>Joint: 4 x 6<br>Thigh: 2 x 6
-Screw | M2 12 or 10mm | ![10mm](files/M2_10mm.JPG) | 6 | Thigh: 1 x 6<br>12mm is better<br>(10 is also ok if 12 is hard to find)
+Screw | M2 10mm | ![10mm](files/M2_10mm.JPG) | 24 | Thigh: 1 x 6<br>Pin lock: 1 x 18
 Screw | M2 30mm | ![30mm](files/M2_30mm.JPG) | 36 | Servo: 2 x 18
 Nuts | M2 | ![6mm](files/M2_nut.JPG) | 36 | Servo: 2 x 18
 Pin (304) | M4 6mm | ![pin](files/pin_M4_6mm.JPG) | 18 | Servo: 1 x 18
