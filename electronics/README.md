@@ -19,7 +19,7 @@ Name | Thumbnail | Required |
 -------- | --------- | -------- |
 [Linkit 7697](https://labs.mediatek.com/zh-tw/platform/linkit-7697) | <img width=200 src='https://labs.mediatek.com/images/img_hdk_7697.png'/> | 1 |
 [mini360 DC-DC](https://www.aliexpress.com/w/wholesale-mini360-dc-dc.html) Buck voltage regulator | ![](files/mini360.png) | 7 |
-[PCA9865](https://cdn-shop.adafruit.com/datasheets/PCA9685.pdf) (TSSOP28)| ![](files/pca9865.png) | 2 |
+[PCA9685](https://cdn-shop.adafruit.com/datasheets/PCA9685.pdf) (TSSOP28)| ![](files/pca9685.png) | 2 |
 Resistor: 220 ohm (0805) | | 18 |
 Resistor: 10K ohm (0805) | | 12 |
 Resistor: 470 ohm (0805) | | 1 |

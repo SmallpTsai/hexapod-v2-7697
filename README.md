@@ -1,7 +1,8 @@
 # hexapod-v2-7697
 
-Hexapod v2 using Linkit 7697
+> 中文版本請看 [這裡](README_tw.md)
 
+Hexapod v2 using Linkit 7697
 
 This is a Hexapod project.
 
@@ -16,7 +17,7 @@ See demo video - https://youtu.be/NJ7DdDEcq3U to get the idea.
 
 * **Remote control** is done via `BLE` of `Linkit 7697`
 * It has 6 legs, each leg has 3 joint. So there are total `18` **Servo motors** (TowerPro `MG92B`)
-* Linkt 7697 dont have so many **PWM control**, so NXP `PCA9865` x 2 are used to control these servo motors
+* Linkt 7697 dont have so many **PWM control**, so NXP `PCA9685` x 2 are used to control these servo motors
 * **Power** comes from a `2S Lipo battery (7.4v)`. Also 7 x `mini360 DC-DC` step down voltage regulator are used. One to provide `5V` to Linkit 7697, The other six to provide `6V` to each legs (1 mini360 serve 3 servo)
 * The **body** is 3D printed PLA. I use `Prusa i3 MK2S`, a really good 3D printer.
 * Everything (3D STL, PCB schematic, 7697 source code) are included in the project under **GPL license**, Happy making!
