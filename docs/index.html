@@ -4,8 +4,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <title>Hexapod</title>
+    <meta name="description" content="Hexapod is an Robotic project for Personal/Hobby Maker, using Raspberry Pi (RPi) or Linkit 7697 as its controller, also iOS/Android remote controllable">
+    <title>Hexapod: Main page</title>
 
     <link rel="shortcut icon" type="image/png" href="images/icon-b.png" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -18,11 +18,25 @@
         user-select: none;
       }
 
+      .bd-placeholder-img img {
+        display: block;
+        margin-left:auto;
+        margin-right:auto;
+      }
+
       .jumbotron {
         padding-top: 3rem;
         padding-bottom: 3rem;
         margin-bottom: 0;
         min-height: 300px;
+      }
+      @media (orientation: portrait) {
+        .jumbotron {
+          padding-top: 1rem;
+          padding-bottom: 1rem;
+          margin-bottom: 0;
+          min-height: 200px;
+        }
       }
 
       .text-outlined {
@@ -45,6 +59,16 @@
       .jumbotron-text {
         font-size: 1.2rem;
         max-width: 30rem;
+      }
+      @media (orientation: portrait) {
+        .jumbotron-heading {
+          font-size: 2rem;
+          font-weight: 700;
+        }
+        .jumbotron-text {
+          font-size: 1rem;
+          max-width: 30rem;
+        }
       }
 
       footer {
@@ -137,6 +161,21 @@
                     <div class="d-flex justify-content-between align-items-center">
                       <a href="https://youtu.be/oaAE5fC09KQ" class="btn btn-sm btn-outline-secondary">Youtube</a>
                       <small class="text-muted">2019/3/10</small>
+                    </div>
+                  </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="card mb-4 shadow-sm">
+                <div class="bd-placeholder-img card-img-top bg-dark" width="100%" height="300">
+                  <img src="images/3dparts-s.jpg"/>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">3D parts<br>Parts in <font color=blue>Blue</font> rectangle are for "Body"<br/>Parts in <font color=red>Red</font> rectangle are for "one Leg"</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <a href="images/3dparts-b.jpg" class="btn btn-sm btn-outline-secondary">Detail Image</a>
+                      <small class="text-muted">2019/3/23</small>
                     </div>
                   </div>
               </div>
