@@ -1,53 +1,231 @@
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <title>Hexapod v2 - Demo videos</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-  <style>
-    .jumbotron {
-      background-color: rgb(238, 153, 224)
-    }
-    h1, h4, p {
-      font-family: Verdana, Geneva, Tahoma, sans-serif
-    }
-  </style>
-</head>
-<body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>Hexapod</title>
 
-<div class="jumbotron text-center">
-  <h1>Hexapod v2 - Demo videos</h1>
-  <p>Github: <a href='https://github.com/SmallpTsai/hexapod-v2-7697'>https://github.com/SmallpTsai/hexapod-v2-7697</a></p> 
-</div>
+    <link rel="shortcut icon" type="image/png" href="images/icon-b.png" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+      .bd-placeholder-img {
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      .jumbotron {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        margin-bottom: 0;
+        min-height: 300px;
+      }
+
+      .text-outlined {
+        color: black;
+        text-shadow:
+          -1px -1px 0 white,  
+          1px -1px 0 white,
+          -1px 1px 0 white,
+          1px 1px 0 white;
+      }
+
+      .jumbotron p:last-child {
+        margin-bottom: 0;
+      }
+
+      .jumbotron-heading {
+        font-size: 3rem;
+        font-weight: 700;
+      }
+      .jumbotron-text {
+        font-size: 1.2rem;
+        max-width: 30rem;
+      }
+
+      footer {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+      }
+
+      footer p {
+        margin-bottom: .25rem;
+      }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <div class="collapse bg-dark" id="navbarHeader">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-9 col-md-9 py-4">
+              <h4 class="text-white">About</h4>
+              <p class="text-muted">This is a personal hobby project. <br/>All source code (including 3D components, circuit diagrams, source code) are opened under GPL license. <br/>Feel free to make one by yourself. <br/>Happy Making!</p>
+            </div>
+            <!-- <div class="col-sm-4 offset-md-1 py-4">
+              <h4 class="text-white">Contact</h4>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-white">Follow on Twitter</a></li>
+                <li><a href="#" class="text-white">Like on Facebook</a></li>
+                <li><a href="#" class="text-white">Email me</a></li>
+              </ul>
+            </div> -->
+          </div>
+        </div>
+      </div>
+      <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container d-flex justify-content-between">
+          <a href="#" class="navbar-brand d-flex align-items-center">
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="mr-2" viewBox="0 0 24 24" focusable="false"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg> -->
+            <img width="20" height="20" src="images/icon-w.png"/>
+            <strong>Hexapod</strong>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main role="main">
+
+      <section class="jumbotron" style="background-image: url(images/jumbotron-bg.jpg); background-size: 100%; background-repeat: no-repeat">
+        <div>
+          <h1 class="jumbotron-heading text-outlined">Hexapod Project</h1>
+          <ul>
+            <li class="jumbotron-text text-outlined">6 legs, each with 3 servos, total 18 degress of freedom</li>
+            <li class="jumbotron-text text-outlined">Android / iOS remotely controlled</li>
+            <li class="jumbotron-text text-outlined">2S LiPO battery powered</li>
+          </ul>
+          <p>
+            <a target="_blank" href="https://github.com/SmallpTsai/hexapod-v2-7697" class="btn btn-primary">Github</a>
+            <a target="_blank" href="https://www.youtube.com/channel/UC4nvIRRByxOkgKwkdb99Z8w" class="btn btn-primary">Youtube</a>
+          </p>
+        </div>
+      </section>
+
+      <div class="py-5 bg-light">
+        <div class="container">
+
+          <div class="row">
+
+            <div class="col-md-6">
+              <div class="card mb-4 shadow-sm">
+                <iframe class="bd-placeholder-img card-img-top" width="100%" height="300" src="https://www.youtube.com/embed/To2Y6Mhu-CE" frameborder="0" allow="autoplay; encrypted-media"></iframe>
+                <div class="card-body">
+                  <p class="card-text">Hexapod v2.1<br>New movement mode: "Shift", "Climb", "Slow" are supported.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <a href="https://youtu.be/To2Y6Mhu-CE" class="btn btn-sm btn-outline-secondary">Youtube</a>
+                      <small class="text-muted">2018/12/8</small>
+                    </div>
+                  </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="card mb-4 shadow-sm">
+                <iframe class="bd-placeholder-img card-img-top" width="100%" height="300" src="https://www.youtube.com/embed/oaAE5fC09KQ" frameborder="0" allow="autoplay; encrypted-media"></iframe>
+                <div class="card-body">
+                  <p class="card-text">Leg Assembly<br>This video demostrates how "Leg" is assembled.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <a href="https://youtu.be/oaAE5fC09KQ" class="btn btn-sm btn-outline-secondary">Youtube</a>
+                      <small class="text-muted">2019/3/10</small>
+                    </div>
+                  </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="card mb-4 shadow-sm">
+                <iframe class="bd-placeholder-img card-img-top" width="100%" height="300" src="https://www.youtube.com/embed/EhIvYd5yoXo" frameborder="0" allow="autoplay; encrypted-media"></iframe>        
+                <div class="card-body">
+                  <p class="card-text">Sunday in the park<br>Shows App UI and How remote-controling Hexapod work.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <a href="https://youtu.be/EhIvYd5yoXo" class="btn btn-sm btn-outline-secondary">Youtube</a>
+                      <small class="text-muted">2019/3/17</small>
+                    </div>
+                  </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="card mb-4 shadow-sm">
+                <iframe class="bd-placeholder-img card-img-top" width="100%" height="300" src="https://www.youtube.com/embed/NJ7DdDEcq3U" frameborder="0" allow="autoplay; encrypted-media"></iframe>        
+                <div class="card-body">
+                  <p class="card-text">Hexapod v2.0<br>Show various movement.</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <a href="https://youtu.be/NJ7DdDEcq3U" class="btn btn-sm btn-outline-secondary">Youtube</a>
+                      <small class="text-muted">2018/10/6</small>
+                    </div>
+                  </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="card mb-4 shadow-sm">
+                <iframe class="bd-placeholder-img card-img-top" width="100%" height="300" src="https://www.youtube.com/embed/mwXX7JwDgVw" frameborder="0" allow="autoplay; encrypted-media"></iframe>        
+                <div class="card-body">
+                  <p class="card-text">Hexapod v2.0<br>Show "Running" and "Climb" movement</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <a href="https://youtu.be/mwXX7JwDgVw" class="btn btn-sm btn-outline-secondary">Youtube</a>
+                      <small class="text-muted">2018/10/10</small>
+                    </div>
+                  </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="card mb-4 shadow-sm">
+                <iframe class="bd-placeholder-img card-img-top" width="100%" height="300" src="https://www.youtube.com/embed/rrRT6g5XCQ4" frameborder="0" allow="autoplay; encrypted-media"></iframe>        
+                <div class="card-body">
+                  <p class="card-text">Hexapod v2.0<br>Show "Waltz-like" movement</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <a href="https://youtu.be/rrRT6g5XCQ4" class="btn btn-sm btn-outline-secondary">Youtube</a>
+                      <small class="text-muted">2018/10/13</small>
+                    </div>
+                  </div>
+              </div>
+            </div>
+              
+
+            <!-- <div class="col-md-6">
+              <div class="card mb-4 shadow-sm">
+                <iframe class="bd-placeholder-img card-img-top" width="100%" height="300" src="https://www.youtube.com/embed/" frameborder="0" allow="autoplay; encrypted-media"></iframe>        
+                <div class="card-body">
+                  <p class="card-text"><br></p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <a href="" class="btn btn-sm btn-outline-secondary">Youtube</a>
+                      <small class="text-muted">2018/12/8</small>
+                    </div>
+                  </div>
+              </div>
+            </div> -->
   
-<div class="container">
-  <div class="row">
-    <div class="col-xl-6">
-      <h4>Playing in the Park</h4>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/NJ7DdDEcq3U" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>        
-    </div>
-    <div class="col-xl-6">
-      <h4>Go out and play</h4>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/To2Y6Mhu-CE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-xl-6">
-      <h4>Running and Climbing</h4>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/mwXX7JwDgVw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </div>
-    <div class="col-xl-6">
-      <h4>Waltz practicing</h4>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/rrRT6g5XCQ4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </div>
-  </div>
-</div>
 
-</body>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <footer class="text-muted">
+      <div class="container">
+        <small><p>This is a personal hobby project. <br/>All source code (including 3D components, circuit diagrams, source code) are opened under GPL license. <br/>Feel free to make one by yourself. <br/>Happy Making!</p></small>
+      </div>
+      <div class="container">
+        <p class="float-right">
+          <a href="#">Back to top</a>
+        </p>
+        <small><p>Powered by &copy; Bootstrap</p></small>
+      </div>
+    </footer>
+
+  </body>
 </html>
-
