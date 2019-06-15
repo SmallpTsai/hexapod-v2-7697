@@ -1,5 +1,8 @@
 # Leg Assemble Instruction
 
+Leg assembly instruction video https://youtu.be/oaAE5fC09KQ is also available.
+<a href='https://youtu.be/oaAE5fC09KQ'><img width=480 src='http://img.youtube.com/vi/oaAE5fC09KQ/0.jpg'/></a>
+
 ## Preparation
 
 For one leg, you will need 3 MG92B servo and below printed parts

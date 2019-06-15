@@ -1,3 +1,5 @@
+![banner](files/hexapod_og.jpg)
+
 # hexapod-v2-7697
 
 > 中文版本請看 [這裡](README_tw.md)
