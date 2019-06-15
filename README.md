@@ -10,8 +10,10 @@ This is a Hexapod project.
 
 You can use any mobile phone (iOS or Android) to control the movement of hexapod (move foreward, backward, etc...).
 
-See demo video - https://youtu.be/NJ7DdDEcq3U to get the idea.
-<a href='https://youtu.be/NJ7DdDEcq3U'><img width=480 src='http://img.youtube.com/vi/NJ7DdDEcq3U/0.jpg'/></a>
+See demo video: https://youtu.be/NJ7DdDEcq3U & https://youtu.be/To2Y6Mhu-CE to get the idea.
+
+<a href='https://youtu.be/NJ7DdDEcq3U'><img src='http://img.youtube.com/vi/NJ7DdDEcq3U/mqdefault.jpg'/></a>
+<a href='https://youtu.be/To2Y6Mhu-CE'><img src='http://img.youtube.com/vi/To2Y6Mhu-CE/mqdefault.jpg'/></a>
 
 > More videos can be found at https://smallptsai.github.io/hexapod-web/
 

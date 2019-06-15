@@ -8,8 +8,10 @@ Hexapod v2 using Linkit 7697
 
 可以用任何手機 (iOS 或 Android) 來控制它的動作 (包括前進，後退，扭動等等...)
 
-可參考以下的 Youtube 影片 https://youtu.be/NJ7DdDEcq3U
-<a href='https://youtu.be/NJ7DdDEcq3U'><img width=480 src='http://img.youtube.com/vi/NJ7DdDEcq3U/0.jpg'/></a>
+可參考以下的 Youtube 影片 https://youtu.be/NJ7DdDEcq3U & https://youtu.be/To2Y6Mhu-CE
+
+<a href='https://youtu.be/NJ7DdDEcq3U'><img src='http://img.youtube.com/vi/NJ7DdDEcq3U/mqdefault.jpg'/></a>
+<a href='https://youtu.be/To2Y6Mhu-CE'><img src='http://img.youtube.com/vi/To2Y6Mhu-CE/mqdefault.jpg'/></a>
 
 > 在 https://smallptsai.github.io/hexapod-v2-7697/ 可以看到更多影片
 

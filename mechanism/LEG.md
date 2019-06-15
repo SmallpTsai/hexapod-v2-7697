@@ -1,7 +1,7 @@
 # Leg Assemble Instruction
 
 Leg assembly instruction video https://youtu.be/oaAE5fC09KQ is also available.
-<a href='https://youtu.be/oaAE5fC09KQ'><img width=480 src='http://img.youtube.com/vi/oaAE5fC09KQ/0.jpg'/></a>
+<a href='https://youtu.be/oaAE5fC09KQ'><img src='http://img.youtube.com/vi/oaAE5fC09KQ/mqdefault.jpg'/></a>
 
 ## Preparation
 
